@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_security"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_title" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="7dp" />
+
+    <LinearLayout
+        android:id="@+id/ll_gw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/btn_home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <ImageButton
+                android:id="@+id/image_home"
+                android:layout_width="61dp"
+                android:layout_height="61dp"
+                android:background="@color/transparent"
+                android:src="@drawable/gw_home_normal" />
+
+            <com.nuowei.smarthome.view.textview.DinProTextView
+                android:id="@+id/tv_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/away" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_away"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <ImageButton
+                android:id="@+id/image_away"
+                android:layout_width="61dp"
+                android:layout_height="61dp"
+                android:background="@color/transparent"
+                android:src="@drawable/gw_away_normal" />
+
+            <com.nuowei.smarthome.view.textview.DinProTextView
+                android:id="@+id/tv_away"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/home" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_disarm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <ImageButton
+                android:id="@+id/image_disarm"
+                android:layout_width="61dp"
+                android:layout_height="61dp"
+                android:background="@color/transparent"
+                android:src="@drawable/gw_disarm_normal" />
+
+            <com.nuowei.smarthome.view.textview.DinProTextView
+                android:id="@+id/tv_disarm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/disarm" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <cn.iwgang.familiarrecyclerview.FamiliarRefreshRecyclerView
+        android:id="@+id/refreshListRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="7dp"
+        android:scrollbars="vertical"
+        app:frv_divider="@null"
+        app:frv_isEmptyViewKeepShowHeadOrFooter="false"
+        app:frv_layoutManager="linear"
+        app:frv_layoutManagerOrientation="vertical" />
+    <!-- <com.cooltechworks.views.shimmer.ShimmerRecyclerView xmlns:app="http://schemas.android.com/apk/res-auto"
+         android:id="@+id/shimmer_recycler_view"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="7dp"
+         android:paddingBottom="10dp"
+         app:demo_child_count="10"
+         app:demo_layout="@layout/layout_demo" />-->
+</LinearLayout>

@@ -1,0 +1,303 @@
+<resources>
+    <string name="app_name">Smarthome</string>
+    <string name="frv_def_load_more_view_status_normal">松开加载更多</string>
+    <string name="frv_def_load_more_view_status_loading">加载数据中，请稍等...</string>
+    <string name="frv_def_load_more_view_status_error">加载失败，请重试</string>
+    <string name="username">Username</string>
+    <string name="kardia_kuben">Kardia Kuben</string>
+    <string name="psssword">Psssword</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="sign_in">Sign in</string>
+    <string name="sign_up">Sign up</string>
+    <string name="enter_your_username_or_your_email_address_and_n_we_ll_deliver_your_username_and_a_link_to_n_enter_a_new_password">Enter your username or your email address and \n we\'ll deliver your username and a link to \n enter a new Password</string>
+    <string name="email">Email</string>
+    <string name="repeat_password">Repeat Password</string>
+    <string name="Continue">Continue</string>
+    <string name="Login">Login</string>
+    <string name="Register">Register</string>
+    <string name="ForgetPassword">ForgetPassword</string>
+
+    <string name="Security">安防</string>
+    <string name="Air">空气</string>
+    <string name="Water">水</string>
+    <string name="Electricity">电</string>
+    <string name="Lights">灯控</string>
+    <string name="Floor_heating">地暖</string>
+    <string name="Service">服务</string>
+    <string name="Equipment">设备</string>
+    <string name="Setting">设置</string>
+    <string name="Device">设备</string>
+    <string name="Scene">场景</string>
+    <string name="Share_Device">分享设备</string>
+    <string name="Feedback">意见反馈</string>
+    <string name="About">关于</string>
+    <string name="pickerview_cancel">取消</string>
+    <string name="pickerview_submit">确定</string>
+    <string name="pickerview_year">年</string>
+    <string name="pickerview_month">月</string>
+    <string name="pickerview_day">日</string>
+    <string name="pickerview_hours">时</string>
+    <string name="pickerview_minutes">分</string>
+    <string name="pickerview_seconds">秒</string>
+    <string name="unknow">不知道</string>
+    <string name="alarm">报警</string>
+    <string name="ALRM_RESUME_17">  %1$s    关闭</string>
+    <string name="ALRM_RESUME_18">  %1$s    无水泄漏</string>
+    <string name="ALRM_RESUME_19">  %1$s    无人经过</string>
+    <string name="ALRM_RESUME_20">  %1$s    报警恢复</string>
+    <string name="ALRM_RESUME_22">  %1$s    报警恢复</string>
+    <string name="ALRM_RESUME_24">  %1$s    报警恢复</string>
+    <string name="ALRM_RESUME_67">  %1$s    关闭</string>
+    <string name="ALRMING_17">  %1$s    打开</string>
+    <string name="ALRMING_18">  %1$s    水泄漏报警</string>
+    <string name="ALRMING_19">  %1$s    有人经过</string>
+    <string name="ALRMING_20">  %1$s    烟雾报警</string>
+    <string name="ALRMING_22">  %1$s    气感报警</string>
+    <string name="ALRMING_24">  %1$s    一氧化碳报警</string>
+    <string name="ALRMING_49">  %1$s    紧急按钮报警</string>
+    <string name="ALRMING_50">  %1$s    遥控器报警</string>
+    <string name="ALRMING_67">  %1$s    打开</string>
+    <string name="ARM_50">  %1$s    外出布防</string>
+    <string name="DISARM_50">  %1$s    撤防</string>
+    <string name="HOMEARM_50">  %1$s    在家布防</string>
+    <string name="HUM_ALARM_21">  %1$s    湿度报警</string>
+    <string name="Power_1042">  %1$s    功率过大</string>
+    <string name="Power_Current_1042">  %1$s    功率电流过大</string>
+    <string name="Current_1042">  %1$s    电流过大</string>
+    <string name="Power_Currentvoltage_1042">  %1$s    垃圾东西</string>
+    <string name="Power_Voltage_1042">  %1$s    功率电压过大</string>
+    <string name="Current_Voltage_1042">  %1$s    电流电压过大</string>
+    <string name="LIGHT_OFF_1">  %1$s    彩灯关闭</string>
+    <string name="LIGHT_ON_1">  %1$s    彩灯开启</string>
+    <string name="RELAY_OFF_67">  %1$s    电源关闭</string>
+    <string name="RELAY_ON_67">  %1$s    电源打开</string>
+    <string name="TAMPER_ALARM_17">  %1$s    打开 (已拆下)</string>
+    <string name="TAMPER_ALARM_18">  %1$s    水泄漏报警 (已拆下)</string>
+    <string name="TAMPER_ALARM_19">  %1$s    有人经过(已拆下)</string>
+    <string name="TAMPER_DEVALARM_17">  %1$s   打开 (已拆下)</string>
+    <string name="TAMPER_DEVALARM_18">  %1$s   水泄漏报警 (已拆下)</string>
+    <string name="TAMPER_DEVALARM_19">  %1$s    有人经过(已拆下)</string>
+    <string name="TAMPER_DEVRESUME_17">  %1$s    关闭 (已拆下)</string>
+    <string name="TAMPER_DEVRESUME_18">  %1$s    无水泄漏 (已拆下)</string>
+    <string name="TAMPER_DEVRESUME_19">  %1$s    无人经过(已拆下)</string>
+    <string name="TAMPER_RESUME_17">  %1$s    关闭 (已拆下)</string>
+    <string name="TAMPER_RESUME_18">  %1$s    无水泄漏 (已拆下)</string>
+    <string name="TAMPER_RESUME_19">  %1$s    无人经过(已拆下)</string>
+    <string name="TEMP_ALARM_21">  %1$s    温度报警</string>
+    <string name="TEMP_HUM_ALARM_21">  %1$s    温湿度报警</string>
+    <string name="USB_OFF_67">  %1$s    USB关闭</string>
+    <string name="USB_ON_67">  %1$s    USB打开</string>
+    <string name="ARM_0">  %1$s    外出布防</string>
+    <string name="DISARM_0">  %1$s    撤防</string>
+    <string name="HOME_ARM_0">  %1$s    在家布防</string>
+
+
+    <string name="add_scene">添加场景</string>
+    <string name="Save">提交</string>
+    <string name="add_execution_tack">添加执行条件</string>
+    <string name="start_timer">Start timer</string>
+    <string name="repeat">Repeat</string>
+    <string name="countdown">Countdown</string>
+    <string name="sunday">Sunday</string>
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+    <string-array name="calendar_week">
+        <item>日</item>
+        <item>一</item>
+        <item>二</item>
+        <item>三</item>
+        <item>四</item>
+        <item>五</item>
+        <item>六</item>
+    </string-array>
+
+
+    <string name="exit_app_hint">再点一次退出应用</string>
+    <string name="cancel">取消</string>
+    <string name="confirm">确定</string>
+    <string name="finish">完成</string>
+    <string name="finished">已完成</string>
+    <string name="start">开始</string>
+
+    <!--calendar-->
+    <string name="calendar_today">今天</string>
+    <string-array name="calendar_month">
+        <item>一月</item>
+        <item>二月</item>
+        <item>三月</item>
+        <item>四月</item>
+        <item>五月</item>
+        <item>六月</item>
+        <item>七月</item>
+        <item>八月</item>
+        <item>九月</item>
+        <item>十月</item>
+        <item>十一月</item>
+        <item>十二月</item>
+    </string-array>
+    <string name="calendar_day">%d日</string>
+    <string name="calendar_year">%d年</string>
+
+    <!--schedule-->
+    <string name="schedule_input_you_do_thing">输入您要做的事情</string>
+    <string name="schedule_input_content_is_no_null">事件内容不能为空</string>
+    <string name="schedule_event_detail_setting">事件详情设置</string>
+    <string name="schedule_title">事件标题</string>
+    <string name="schedule_show_finish_task">显示已完成任务</string>
+    <string name="schedule_hide_finish_task">隐藏已完成任务</string>
+    <string name="schedule_delete_this_schedule">是否删除该行程？</string>
+
+    <!--menu-->
+    <string name="menu_schedule">日程</string>
+    <string name="menu_event_set">事件集</string>
+    <string name="menu_add_event_set">添加事件清单</string>
+    <string name="menu_no_category">未分类</string>
+
+    <!--event.set-->
+    <string name="event_set_list_name">清单名称</string>
+    <string name="event_set_color">颜色</string>
+    <string name="event_set_name_is_not_null">清单名称不能为空</string>
+    <string name="event_set_select_color">选择颜色</string>
+    <string name="event_set_delete_this_event_set">确定要删除该事件集？</string>
+
+    <string name="hour">小时</string>
+    <string name="remarks">备忘录</string>
+    <string name="please_input_desc">请输入备忘信息</string>
+    <string name="date_format">yyyy年MM月dd日 HH:mm</string>
+    <string name="date_format_no_time">%1$s年%2$s月%3$s日</string>
+    <string name="click_here_select_date">点击此处选择时间</string>
+    <string name="click_here_select_location">点击此处选择地点</string>
+    <string name="click_input_location">点击输入地点</string>
+    <string name="add_location">添加地点</string>
+    <string name="select_event_set">选择事件清单</string>
+    <string name="Perform_tasks">执行任务</string>
+    <string name="Disarm">Disarm</string>
+    <string name="OutAlert">Out Alert</string>
+    <string name="AtHome">At Home</string>
+    <string name="PFUF">Power Off | USB Off</string>
+    <string name="PFUN">Power Off | USB On</string>
+    <string name="poweron">Power On</string>
+    <string name="usboff">USB Off</string>
+    <string name="usbon">USB On</string>
+    <string name="Brightness">Brightness</string>
+    <string name="Arming">Arming</string>
+    <string name="Monday">周一</string>
+    <string name="Tuesday">周二</string>
+    <string name="Wednesday">周三</string>
+    <string name="Thursday">周四</string>
+    <string name="Friday">周五</string>
+    <string name="Saturday">周六</string>
+    <string name="Sunday">周日</string>
+    <string name="everyday">每天</string>
+    <string name="Daily">工作日</string>
+    <string name="Weekdays">周末</string>
+    <string name="grid">Grid</string>
+    <string name="list">List</string>
+    <string name="pm2_5">pm2.5</string>
+    <string name="tds">TDS</string>
+    <string name="c">°C</string>
+    <string name="temperature">Temperature</string>
+    <string name="water_quality">Water Quality</string>
+    <string name="excellent">Excellent</string>
+    <string name="disarm">Disarm</string>
+    <string name="away">Away</string>
+    <string name="home">Home</string>
+    <string name="Diary">Diary</string>
+    <string name="Open">Open</string>
+    <string name="Close">Close</string>
+    <string name="Alarm">Alarm</string>
+    <string name="Clear">Clear</string>
+    <string name="execute">execute</string>
+    <string name="time_onoff">timer off</string>
+    <string name="no_set_time">Not set time</string>
+    <string name="action_time">action time</string>
+    <string name="open_period">Open Period</string>
+    <string name="choice_add_device">Select Device</string>
+    <string name="device_rgb">RGB</string>
+    <string name="device_door_sensor">Door</string>
+    <string name="device_water_sensor">Water</string>
+    <string name="device_pir_sensor">Pir</string>
+    <string name="device_smoke_sensor">Smoke</string>
+    <string name="device_thp_sensor">Thp</string>
+    <string name="device_gas_sensor">Gas</string>
+    <string name="device_co_sensor">Co</string>
+    <string name="device_sos_sensor">Sos</string>
+    <string name="device_sw_sensor">Sw</string>
+    <string name="device_smart_plug">Plug</string>
+    <string name="device_metering_Plug">Metering Plug</string>
+    <string name="device_gateway">Gateway</string>
+    <string name="message">message</string>
+    <string name="Personal">Personal</string>
+    <string name="Phone">Phone</string>
+    <string name="Email">Email</string>
+    <string name="Choice_Gateway">Choice Gateway</string>
+    <string name="Modify_password">Modify password</string>
+    <string name="Age">Age</string>
+
+
+    <string name="title_default">this is a CBDialog</string>
+    <string name="dialog_default_title">Here\'s a message!</string>
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="LOADING">Loading...</string>
+    <string name="default_progressbar">Default Progressbar:</string>
+    <string name="progress_dialog_outtime_msg">I don\'t know what\'s wrong</string>
+    <string name="ModifyPassword">Modify Password</string>
+    <string name="OldPsssword">Old Psssword</string>
+    <string name="NewPsssword">New Psssword</string>
+    <string name="Adddevice">Add device</string>
+    <string name="SDavailable">SD is not available</string>
+    <string name="Photoaccessfailed">Photo access failed</string>
+    <string name="preservation">Preservation</string>
+    <string name="not_gateway">You have not added a gateway!</string>
+    <string name="visibility">Visibility</string>
+    <string name="km">km</string>
+    <string name="pressure">Pressure</string>
+    <string name="low">(Low)</string>
+    <string name="humidity">Humidity</string>
+    <string name="h">%</string>
+    <string name="millibars">millibars</string>
+    <string name="default_loading">Loading…</string>
+    <string name="Configurewifi">Configure wifi</string>
+    <string name="GWONE">1个网关最多添加6个场景!</string>
+
+    <string name="SceneName">场景名称</string>
+    <string name="Send">Send...</string>
+    <string name="deviceoffline">device offline</string>
+    <string name="Tips">Tips</string>
+    <string name="Deletethisscene">Delete this scene?</string>
+    <string name="Adderror">Add error!</string>
+    <string name="ClickheretoaddScene">Click here to add Scene.</string>
+    <string name="adddevice">Add Device</string>
+    <string name="Clickheretoadddevice">Click here to add device.</string>
+    <string name="WifiSSID">WifiSSID:</string>
+    <string name="Sharesuccess">Share success</string>
+    <string name="device_ipc">IPC</string>
+    <string name="now_temp">当前温度：</string>
+    <string name="new_hum">当前湿度：</string>
+    <string name="hump">%</string>
+    <string name="tempp">℃</string>
+    <string name="Temp">温度：</string>
+    <string name="Hum">湿度：</string>
+    <string name="is_logout">是否退出当前账号？</string>
+    <string name="Logout">退出登录</string>
+    <string name="NoGongNeng">该功能正在开发</string>
+    <string name="listview_header_hint_normal">下拉刷新</string>
+    <string name="listview_header_hint_release">释放立即刷新</string>
+    <string name="listview_loading">正在加载...</string>
+    <string name="nomore_loading">没有了</string>
+    <string name="refreshing">正在刷新...</string>
+    <string name="refresh_done">刷新完成</string>
+    <string name="loading_done">加载完成</string>
+    <string name="listview_header_last_time">上次更新时间：</string>
+    <string name="Change_Name">修改名称</string>
+    <string name="Delete_Device">删除设备</string>
+    <string name="Device_TOP">设备置顶</string>
+    <string name="no_device_name">请输入设备名称</string>
+    <string name="is_delete_device">您确定删除该设备吗？</string>
+    <string name="no_user_name">请输入用户昵称</string>
+</resources>

@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:scrollbars="none">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fresh_air_top_bg"
+            android:orientation="vertical">
+
+            <include layout="@layout/activity_title" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="195dp"
+                android:layout_marginTop="@dimen/space_20dp"
+                android:background="#00000000"
+                android:gravity="center_vertical">
+
+
+                <ImageButton
+                    android:id="@+id/imageButton_remove"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignTop="@+id/imageButton_add"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="27dp"
+                    android:layout_marginStart="27dp"
+                    android:background="#00000000"
+                    android:src="@drawable/client_all_column_remove" />
+
+
+                <com.nuowei.smarthome.view.circleprogresslibrary.CircleProgress
+                    android:id="@+id/myCircleProgress"
+                    android:layout_width="195dp"
+                    android:layout_height="195dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    custom:CbgColor="@color/white"
+                    custom:currProgress="180"
+                    custom:foreEndColor="@color/color_end"
+                    custom:foreMiddleColor="@color/color_middle"
+                    custom:foreStartColor="@color/color_start"
+                    custom:maxProgress="240"
+                    custom:progressInitialPosition="105"
+                    custom:progressWidth="4dp"
+                    custom:sprogressWidth="1dp"
+                    custom:useAnimation="true" />
+
+                <TextView
+                    android:id="@+id/demo_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_horizontal"
+                    android:text="25"
+                    android:textColor="@color/white"
+                    android:textSize="66sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/demo_tv"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_toEndOf="@+id/demo_tv"
+                    android:layout_toRightOf="@+id/demo_tv"
+                    android:text="°"
+                    android:textColor="@color/white"
+                    android:textSize="66sp" />
+
+                <ImageButton
+                    android:id="@+id/imageButton_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginEnd="27dp"
+                    android:layout_marginRight="27dp"
+                    android:background="#00000000"
+                    android:src="@drawable/client_all_column_add" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/btn_home"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <ImageButton
+                    android:id="@+id/image_home"
+                    android:layout_width="61dp"
+                    android:layout_height="61dp"
+                    android:background="@color/transparent"
+                    android:src="@drawable/gw_home_normal" />
+
+                <com.nuowei.smarthome.view.textview.DinProTextView
+                    android:id="@+id/tv_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/away" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btn_away"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <ImageButton
+                    android:id="@+id/image_away"
+                    android:layout_width="61dp"
+                    android:layout_height="61dp"
+                    android:background="@color/transparent"
+                    android:src="@drawable/gw_away_normal" />
+
+                <com.nuowei.smarthome.view.textview.DinProTextView
+                    android:id="@+id/tv_away"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/home" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btn_disarm"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <ImageButton
+                    android:id="@+id/image_disarm"
+                    android:layout_width="61dp"
+                    android:layout_height="61dp"
+                    android:background="@color/transparent"
+                    android:src="@drawable/gw_disarm_normal" />
+
+                <com.nuowei.smarthome.view.textview.DinProTextView
+                    android:id="@+id/tv_disarm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/disarm" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.jaredrummler.materialspinner.MaterialSpinner
+                    android:id="@+id/spinner_supply"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <com.jaredrummler.materialspinner.MaterialSpinner
+                    android:id="@+id/spinner_return"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btn_runner"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <ImageButton
+                    android:id="@+id/image_runner"
+                    android:layout_width="61dp"
+                    android:layout_height="61dp"
+                    android:background="@color/transparent"
+                    android:src="@drawable/gw_disarm_normal" />
+
+                <com.nuowei.smarthome.view.textview.DinProTextView
+                    android:id="@+id/tv_runner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Runner" />
+
+                <com.nuowei.smarthome.view.textview.DinProTextView
+                    android:id="@+id/tv_runner_onoff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Open" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btn_heating"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <ImageButton
+                    android:id="@+id/image_heating"
+                    android:layout_width="61dp"
+                    android:layout_height="61dp"
+                    android:background="@color/transparent"
+                    android:src="@drawable/gw_disarm_normal" />
+
+                <com.nuowei.smarthome.view.textview.DinProTextView
+                    android:id="@+id/tv_heating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Heating" />
+
+                <com.nuowei.smarthome.view.textview.DinProTextView
+                    android:id="@+id/tv_heating_onoff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Open" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btn_filter"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <ImageButton
+                    android:id="@+id/image_filter"
+                    android:layout_width="61dp"
+                    android:layout_height="61dp"
+                    android:background="@color/transparent"
+                    android:src="@drawable/gw_disarm_normal" />
+
+                <com.nuowei.smarthome.view.textview.DinProTextView
+                    android:id="@+id/tv_filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Filter life" />
+
+                <com.nuowei.smarthome.view.textview.DinProTextView
+                    android:id="@+id/tv_filter_ss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="96%" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <cn.iwgang.familiarrecyclerview.FamiliarRecyclerView
+                android:id="@+id/mRecyclerView"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical"
+                app:frv_dividerHorizontal="@color/table_bg"
+                app:frv_dividerHorizontalHeight="1px"
+                app:frv_dividerVertical="@color/table_bg"
+                app:frv_dividerVerticalHeight="1px"
+                app:frv_layoutManager="grid"
+                app:frv_layoutManagerOrientation="vertical"
+                app:frv_spanCount="3" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_power"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/fresh_air_top_bg_1"
+            android:orientation="vertical">
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</ScrollView>

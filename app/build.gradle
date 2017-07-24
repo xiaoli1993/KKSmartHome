@@ -1,0 +1,113 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.jakewharton.butterknife'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "com.nuowei.smarthome"
+        minSdkVersion 15
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+        multiDexEnabled true
+        ndk {
+            abiFilters "armeabi"
+        }
+    }
+    aaptOptions {
+        cruncherEnabled = false
+        useNewCruncher = false
+
+    }
+
+    useLibrary 'org.apache.http.legacy'
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+            assets.srcDirs = ['src/main/assets', 'src/main/assets/']
+        }
+    }
+
+}
+repositories {
+
+    flatDir {
+        dirs 'libs'
+    }
+}
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile files('libs/utdid4all-1.1.5.3_proguard.jar')
+    compile(name: 'alisdk-hotfix-1.4.0', ext: 'aar')
+    //    compile project(':calendar')
+
+    //    compile 'com.android.support:percent:25.1.0'
+    compile('com.github.niorgai:StatusBarCompat:2.1.3', {
+        exclude group: 'com.android.support'
+    })
+//    compile project(':p2p-core')
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:design:25.1.0'
+    compile 'com.loopj.android:android-async-http:1.4.6'
+    compile 'org.litepal.android:core:1.5.1'
+    compile 'com.orhanobut:hawk:2.0.1'
+    compile 'com.google.code.gson:gson:2.8.0'
+//    compile 'com.umeng.analytics:analytics:latest.integration'
+    compile 'com.github.iwgang:familiarrecyclerview:1.3.2'
+    compile 'com.github.JiongBull:jlog:0.1.0'
+    compile 'com.jakewharton:butterknife:8.5.1'
+    compile 'com.tool.common.log:Q-Log:0.2.0'
+    compile 'com.zhy:okhttputils:2.6.2'
+    compile 'com.tapadoo.android:alerter:1.0.6'
+//    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
+//    compile 'io.reactivex.rxjava2:rxjava:2.0.1'
+//    compile 'com.tbruyelle.rxpermissions2:rxpermissions:0.9.3@aar'
+    compile 'com.github.GrenderG:Toasty:1.1'
+    compile 'com.github.sharish:ShimmerRecyclerView:v1.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.0-alpha9'
+    compile 'com.kyleduo.switchbutton:library:1.4.5'
+    compile 'joda-time:joda-time:2.9.4'
+    compile 'com.android.support:cardview-v7:25.1.0'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.android.support:support-v4:25.3.1'
+    compile 'com.android.support:support-vector-drawable:25.3.1'
+    testCompile 'junit:junit:4.12'
+    testCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5'
+    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'
+    compile 'com.github.wooplr:Spotlight:1.0'
+    compile 'com.bigkoo:alertview:1.0.3'
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    //    compile 'com.github.badoualy:stepper-indicator:1.0.0'
+    compile 'com.wrapp.floatlabelededittext:library:0.0.6'
+    compile 'com.lai.weavey:dialog:2.0.1'
+    compile 'com.kaopiz:kprogresshud:1.0.5'
+    compile 'com.github.badoualy:stepper-indicator:1.0.6'
+    compile 'com.android.support:multidex:1.0.0'
+    compile 'com.android.support:support-compat:25.1.1'
+    compile 'com.daimajia.easing:library:2.0@aar'
+    compile 'com.daimajia.androidanimations:library:2.2@aar'
+    compile 'com.p2p.core:p2p-core:0.3.8'
+    compile 'com.yanzhenjie:permission:1.0.5'
+    compile 'com.github.PhilJay:MPAndroidChart:v3.0.2'
+    compile 'com.jaredrummler:material-spinner:1.1.0'
+//    compile 'com.github.Jay-Goo:RangeSeekBar:v1.0.0'
+
+
+//    compile 'com.github.ganfra:material-spinner:1.1.1'
+
+}
